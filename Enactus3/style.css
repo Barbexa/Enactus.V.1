@@ -23,7 +23,7 @@ body {
 
 }
 
-nav {
+.nav {
     max-width: var(--max-width);
     margin: auto;
     padding: 1rem;
@@ -32,6 +32,50 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 999;
+
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.navig ul {
+    list-style: none;
+    display: none;
+    justify-content: flex-start;
+    padding-left: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+
+}
+
+.navig li {
+    height: 50px;
+}
+
+.navig a {
+
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+
+
+
+
 
 .logo {
     font-size: 1.5rem;
@@ -119,6 +163,11 @@ nav {
     color: black;
 }
 
+.main-content button {
+    position: relative;
+    margin-top: 40px;
+}
+
 .btn1 {
     padding: 1rem 2rem;
     color: var(--white) !important;
@@ -126,6 +175,7 @@ nav {
     border-radius: 20px;
     text-decoration: none;
     border: none;
+
 
 }
 
@@ -136,15 +186,21 @@ nav {
     border-radius: 20px;
     text-decoration: none;
     border: none;
+    margin-left: 20px;
 
 }
 
 .btn2:hover {
-    background-color: #ebebef;
+    background-color: transparent;
     border: var(--primary-color);
     border-style: solid;
     color: #333333;
 
+}
+
+.btn .btn2 {
+
+    color: #000;
 }
 
 
@@ -592,9 +648,7 @@ h3 {
 }
 
 @media (width < 900px) {
-    .link a:not(.nav-btn) {
-        display: none;
-    }
+
 
     .main-page {
         display: block;
@@ -629,12 +683,7 @@ h3 {
         align-items: center;
         place-content: center;
         padding-top: 20px;
-
-
     }
-
-
-
 
     .first {
         justify-content: center;
@@ -644,4 +693,24 @@ h3 {
         flex-direction: column;
     }
 
+    .link {
+        display: none;
+    }
+
+}
+
+@media(max-width: 800px) {
+    .link {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .navig {
+        width: 100%;
+    }
 }

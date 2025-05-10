@@ -23,7 +23,105 @@ body {
 
 }
 
-.nav {
+nav {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 99;
+}
+
+.nav_content {
+    max-width: 1200px;
+    height: 100px;
+    margin: auto;
+    padding: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: .3s;
+
+
+}
+
+nav .checkbox {
+    display: none;
+
+}
+
+nav input {
+    display: none;
+}
+
+nav .checkbox i {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(34, 33, 33);
+}
+
+ul li a:hover {
+
+    color: #e6cc49;
+}
+
+@media (width < 750px) {
+    nav .checkbox {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 85px;
+        background-color: #ffffff;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    nav #check:checked~ul {
+        left: 0;
+    }
+
+    ul li a {
+        font-size: 1.25rem;
+    }
+
+    .main-page {
+        display: flex;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        padding-top: 80px;
+    }
+}
+
+/*nav originam\l
+nav {
     max-width: var(--max-width);
     margin: auto;
     padding: 1rem;
@@ -32,49 +130,6 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 250px;
-    z-index: 999;
-
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.navig ul {
-    list-style: none;
-    display: none;
-    justify-content: flex-start;
-    padding-left: 30px;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding-top: 10px;
-
-}
-
-.navig li {
-    height: 50px;
-}
-
-.navig a {
-
-    padding: 0 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: #000;
-}
-
-
-
-
 
 
 .logo {
@@ -117,10 +172,10 @@ body {
 
 .link .nav-btn:hover {
     background-color: #333333;
-}
+}*/
 
 .home {
-    background: url(students.jpg);
+    background: url(/Img/FirstDiv.jpg);
     background-size: cover;
     object-fit: cover;
     background-position: center;
@@ -334,13 +389,14 @@ body {
 }
 
 .counter-section {
-    background: url(students3.jpg);
+    background: url(/Img/IMG-20250506-WA0272.jpg);
     color: #ebebef;
     text-align: center;
     padding: 60px 20px;
     background-size: cover;
     object-fit: cover;
     background-position: center;
+
     width: 100%;
     opacity: 80%;
 
@@ -610,7 +666,7 @@ h3 {
 }
 
 .boxes img {
-    width: 50%;
+    width: 60%;
     height: 50%;
     padding-top: 30px;
 }
@@ -647,8 +703,20 @@ h3 {
     text-decoration: underline;
 }
 
-@media (width < 900px) {
+.credit a {
+    color: #000;
+    text-decoration: underline;
 
+}
+
+.credit a:hover {
+    color: #e6cc49;
+}
+
+@media (width < 900px) {
+    .link a:not(.nav-btn) {
+        display: none;
+    }
 
     .main-page {
         display: block;
@@ -683,7 +751,12 @@ h3 {
         align-items: center;
         place-content: center;
         padding-top: 20px;
+
+
     }
+
+
+
 
     .first {
         justify-content: center;
@@ -693,24 +766,4 @@ h3 {
         flex-direction: column;
     }
 
-    .link {
-        display: none;
-    }
-
-}
-
-@media(max-width: 800px) {
-    .link {
-        display: none;
-    }
-
-    .menu-button {
-        display: block;
-    }
-}
-
-@media(max-width: 400px) {
-    .navig {
-        width: 100%;
-    }
 }

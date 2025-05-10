@@ -14,31 +14,20 @@
 
 <body>
     <div class="navbar">
-        <nav class="nav">
-            <div class="logo">
-                <img src="logo.png" alt="" style="width: 90px;">
-            </div>
-            <ul class="nav-link">
-                <li class="link"><a href="#home">Home</a></li>
-                <li class="link"><a href="#about">About Us</a></li>
-                <li class="link"><a href="#what">What We Do</a></li>
-                <li class="link"><a href="#team">The Team</a></li>
-                <li class="link"><a href="#contact">Contact Us</a></li>
-                <li class="menu-button" onclick=showSidebar()><a href="#"><i class="bx bx-menu"></i>
-                    </a></li>
-            </ul>
-            <div class="navig">
-                <ul class="sidebar">
-                    <li onclick=hideSidebar()><a href="#"><i class="bx bx-x"></i></a></li>
-                    <div class="logo">
-                        <img src="logo.png" alt="" style="width: 90px;">
-                    </div>
-                    <li class="link"><a href="#home">Home</a></li>
-                    <li class="link"><a href="#about">About Us</a></li>
-                    <li class="link"><a href="#what">What We Do</a></li>
-                    <li class="link"><a href="#team">The Team</a></li>
-                    <li class="link"><a href="#contact">Contact Us</a></li>
 
+        <nav>
+            <div class="nav_content">
+                <div class="logo"><a href="#"><img src="/Img/rmlogo.png" style="width: 120px;" alt=""></a></div>
+                <label for="check" class="checkbox">
+                    <i class="bx bx-menu"></i>
+                </label>
+                <input type="checkbox" name="check" id="check">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home2">About Us</a></li>
+                    <li><a href="#about">What We Do</a></li>
+                    <li><a href="#team">The Team</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -48,16 +37,17 @@
         <div class="main-page">
             <!--left side-->
             <div class="main-content">
-
-                <h2 data-aos="fade-left">Enactus in Bayero University Kano</h2>
-                <button class="btn2" data-aos="fade-right">Learn More</button>
+                <h2 data-aos="fade-left" style="padding-top: 30px;">Enactus in Bayero University Kano</h2>
+                <div class="btnn" style="padding-right: 40px;">
+                    <a href="#about"> <button class="btn2" data-aos="fade-right">Learn More</button></a>
+                </div>
             </div>
-
-
         </div>
     </section>
 
-    <section class="container" id="home">
+
+
+    <section class="container" id="home2">
         <div class="content-container">
             <h1 class="h1"><span style="font-size: 40px;" data-aos="fade-left"></span> <br><span class="heading-1"
                     data-aos="fade-right">At Bayero
@@ -76,8 +66,9 @@
             </div>
         </div>
         <div class="img-container">
-            <img src="polewithppl.jpg" alt="header" style="height: 300px; border-radius: 5px;" data-aos="fade-left">
-            <img src="posterchina.jpg" alt="header" style="height: 290px; border-radius: 5px;" data-aos="fade-left">
+            <img src="/Leads.jpg" alt="header" style="height: 300px; border-radius: 5px;" data-aos="fade-left">
+            <img src="/Img/IMG-20250509-WA0004.jpg" alt="header" style="height: 290px; border-radius: 5px;"
+                data-aos="fade-left">
             <!--<div class="image-content">
                 <ul>
                     
@@ -148,22 +139,22 @@
 
         <div class="row">
             <div class="course-col" data-aos="zoom-in">
-                <img src="img.jpeg" alt="">
-                <h4>Position</h4>
-                <p>Name</p>
+                <img src="/Img/Lead7.jpg" alt="">
+                <h4>Team Lead</h4>
+                <p>Nura Idris</p>
 
             </div>
 
             <div class="course-col" data-aos="zoom-in" data-aos-dealy="100">
-                <img src="img2.jpeg" alt="">
-                <h4>Position</h4>
-                <p>Name</p>
+                <img src="/Img/Lead5.1.jpg" alt="">
+                <h4>Project Manager</h4>
+                <p>Haruna Idris</p>
             </div>
 
             <div class="course-col" data-aos="zoom-in" data-aos-dealy="100">
-                <img src="img3.jpeg" alt="">
-                <h4>Position</h4>
-                <p>Name</p>
+                <img src="/Img/Lead2.jpg" alt="">
+                <h4>Team Secretary</h4>
+                <p>Hauwa Hassan</p>
             </div>
 
 
@@ -174,23 +165,23 @@
 
         <div class="row">
             <div class="course-col" data-aos="zoom-in" data-aos-dealy="100">
-                <img src="img3.jpeg" alt="">
-                <h4>Position</h4>
-                <p>Name</p>
+                <img src="/Img/Lead3.1.jpg" alt="">
+                <h4>Financial Secretary</h4>
+                <p>Fatima Ishaq</p>
 
             </div>
 
             <div class="course-col" data-aos="zoom-in" data-aos-dealy="100">
 
-                <img src="img.jpeg" alt="">
-                <h4>Position</h4>
-                <p>Name</p>
+                <img src="/Img/Lead1.1.jpg" alt="">
+                <h4>Technical Director</h4>
+                <p>Ibrahim Khaleel</p>
             </div>
 
             <div class="course-col" data-aos="zoom-in" data-aos-dealy="100">
-                <img src="img2.jpeg" alt="">
-                <h4>Position</h4>
-                <p>Name</p>
+                <img src="/Img/Lead6.jpg" alt="">
+                <h4>Amina Aliyu</h4>
+                <p>Social Media Officer</p>
             </div>
 
 
@@ -228,7 +219,7 @@
     <section class="sfooter" id="contact">
         <div class="box-con">
             <div class="boxes">
-                <img src="logo.png" alt="">
+                <img src="/Img/rmlogo.png" alt="" style="width: 220px;" height="120px">
             </div>
 
             <div class="boxess">
@@ -249,6 +240,10 @@
                 <p>Our Number</p>
                 <h2>+234 90 345 2111</h2>
             </div>
+        </div>
+        <div class="credit">Created by <span><a href="https://www.instagram.com/barbex.jy?igsh=YzljYTk1ODg3Zg==">Habiba
+                    Jibril Yahaya</a> ||
+            </span> All Rights reserved.
         </div>
 
 
